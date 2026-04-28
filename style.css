@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Background */
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #8ec5fc, #e0c3fc);
+}
+
+/* Main Box */
+#mcqs {
+  width: 500px;
+  background: #fff;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* Question */
+.question {
+  font-size: 20px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Remove bullets */
+ul {
+  list-style: none;
+}
+
+/* Each option */
+ul li {
+  margin: 10px 0;
+}
+
+/* Hide radio */
+input[type="radio"] {
+  display: none;
+}
+
+/* Option style */
+label {
+  display: block;
+  padding: 12px 15px;
+  border: 1px solid #f7eeee;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Hover */
+label:hover {
+  background: #f5f5f5;
+}
+
+/* Selected */
+input[type="radio"]:checked + label {
+  background: #4a90e2;
+  color: #fff;
+  border-color: #4a90e2;
+}
+
+/* Button */
+.btn {
+  text-align: center;
+  margin-top: 15px;
+}
+
+#submit {
+  padding: 10px 25px;
+  border: none;
+  border-radius: 25px;
+  background: #4a90e2;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#submit:hover {
+  background: #357bd8;
+}
+.mcqs-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.answer:checked + label {
+    padding: 8px;
+    border-radius: 6px;
+    display: inline-block;
+}
+
+.correct {
+    color: green;
+    font-weight: bold;
+}
+.wrong {
+    color: red;
+    text-decoration: line-through;
+}
